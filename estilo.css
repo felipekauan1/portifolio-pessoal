@@ -1,0 +1,145 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.git-hub img {
+    width: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    display: flex;
+}
+
+#container-saudacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-saudacoes {
+    width: 50%;
+}
+
+#saudacoes h1 {
+    font-size: 3.1rem;
+    line-height: 1.5rem;
+}
+
+#saudacoes>div>img {
+    width: 100px;
+}
+
+#meunome {
+    color: #0549dd;
+}
+
+#svg {
+    width: 40%;
+}
+
+.projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-projetos {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box-projeto {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.paragrafos {
+    max-width: 80vw;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #saudacoes h1 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    #container-saudacoes {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    #svg {
+        width: 100%;
+    }
+
+    .container-projetos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
